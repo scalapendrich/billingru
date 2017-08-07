@@ -1,20 +1,11 @@
 import os
 import sqlite3
 
-import logging
 
-logging.basicConfig(level=logging.INFO)
+db_path = '/app/clients.db'
 
-logger = logging.getLogger()
-
-db_path = '../web/clients.db'
-
-try:
-    db_connection = sqlite3.connect(db_path)
-    cursor = db_connection.cursor()
-except:
-    logger.error('Failed to connect to database located at "{}". Check if database exist'.format(db_path))
-    raise
+db_connection = sqlite3.connect(db_path)
+cursor = db_connection.cursor()
 
 
 def get_clients_with_balance_positive():
