@@ -1,0 +1,12 @@
+============================= test session starts ==============================
+platform linux2 -- Python 2.7.12, pytest-3.2.0, py-1.4.34, pluggy-0.4.0 -- /usr/bin/python
+cachedir: .cache
+rootdir: /app, inifile:
+collecting ... collected 3 items
+
+test_balance.py::Test::test_add_service_response_code PASSED
+test_balance.py::Test::test_new_service_availdble_after_1_minute PASSED
+test_balance.py::Test::test_change_balance_when_add_new_service PASSED
+
+========================== 3 passed in 28.31 seconds ===========================
+

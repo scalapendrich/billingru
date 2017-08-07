@@ -1,0 +1,9 @@
+Как запустить тест:
+
+1. git clone https://github.com/scalapendrich/billingru.git
+2  cd billingru
+3. sudo docker-compose build
+4. sudo docker-compose  up -d 
+5. sudo docker exec billingru_web_1 pytest --verbose
+
+
